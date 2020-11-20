@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>LearnCode With Rk</title>
+<style>
+  .carousel-inner .carousel-item{
+
+	height:100vh;
+}
+.banner{
+
+	height: 100vh;
+  background-repeat: no-repeat;
+
+    background-position: center;
+
+}
+.main-menu-logo{
+	position: fixed;
+	top:0;
+	z-index: 100;
+	width: 100%;
+	background: #000;
+}
+.navbar-brand{
+	font-size: 30px;
+	font-weight: bold;
+	color: #faa400 !important;
+}
+.nav-item a{
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 0px 20px !important;
+	color: #fff !important;
+}
+.nav-item a:hover{
+	color: #faa400 !important;
+}
+.carousel-caption{
+	bottom: 50%;
+	display: block !important;
+}
+.carousel-caption h1{
+	font-size: 100px;
+	letter-spacing: 9px;
+	color:  #ffb221;
+
+}
+.carousel-caption h2{
+	font-size: 60px;
+	letter-spacing: 2px;
+	color:  #24fbfd;
+}
+.carousel-caption h3{
+	font-size: 60px;
+	letter-spacing: 2px;
+	color:  #c49dff;
+}
+
+@media (min-width: 0px) and (max-width: 868px) {
+  .carousel-caption{
+    bottom: 30%;
+    display: block !important;
+  }
+
+  .carousel-caption h1{
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  .carousel-caption h2{
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .carousel-caption h3{
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+}
+
+
+
+.bg-cover {
+    background-attachment: static;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+body {
+   background: rgb(255, 247, 233);
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 0;
+}
+.card-body {
+  color: white;
+  text-shadow: 0px 1px 0px rgba(black, 1);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-position: top center;
+  transition: .5s ease;
+  transform: .5s ease;
+  a {
+        transition: .5s ease;
+        color: orange;
+        text-decoration: none;
+  }
+  &:hover {
+    a {
+        color: lighten(orange,25%);
+    }
+  }
+}
+.card-footer {
+  font-weight: 100;
+  color: rgba(0, 0, 0, .75);
+  background-color: rgba(255, 255, 255, 1);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+// Placeholder
+%overlay {
+	content: "";
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+%overlay-parent {
+	background-size: cover;
+	position: relative;
+	//z-index: 1;
+	> * {
+		position: relative;
+	}
+}
+
+
+</style>
+
+
+  </head>
+  <body>
+
+
+
+
+
+
+
+       <header>
+<!-- log and nav area -->
+    <div class="main-menu-logo bg-none ">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">LearnCode With RK</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</span></a>
+                  </li>
+
+                  <li class="nav-item ">
+                    <a class="nav-link" href="#">Work</span></a>
+                  </li>
+
+                  <li class="nav-item ">
+                    <a class="nav-link"  href="#"  data-toggle="modal" data-target="#about-modal">About</span></a>
+                  </li>
+
+                  <li class="nav-item ">
+                    <a class="nav-link"  href="#" data-toggle="modal" data-target="#contact-modal">Contact</span></a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+    </div>
+<!-- slider area -->
+
+
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-pause="false">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="banner" style="background-image: url('https://raw.githubusercontent.com/LearncodeWithRk/Simple-Layout-Html-Css/main/slider1.png')"></div>
+
+
+            </div>
+
+
+            <div class="carousel-item ">
+              <div class="banner" style="background-image: url('https://raw.githubusercontent.com/LearncodeWithRk/Simple-Layout-Html-Css/main/slider2.png')"></div>
+
+            </div>
+
+
+            <div class="carousel-item ">
+              <div class="banner" style="background-image: url('https://raw.githubusercontent.com/LearncodeWithRk/Simple-Layout-Html-Css/main/slider3.png')"></div>
+
+            </div>
+
+
+
+
+          </div>
+
+
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+
+
+   </header>
+
+
+
+
+
+  <!-- About Modal -->
+  <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">LearnCode With RK</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <img src="https://raw.githubusercontent.com/LearncodeWithRk/Simple-Layout-Html-Css/main/img10.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 text-info">
+              <h3>LearnCode With RK</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info rounded-0 " data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- /.about  -->
+
+
+  <div class="row">
+
+  <div class="col-md-6">
+    <br>
+    <h2>Lorem Ipsum</h2>
+  <div class="jumbotron bg-cover" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%), url(https://raw.githubusercontent.com/LearncodeWithRk/Simple-Layout-Html-Css/main/img9.png)">
+    <div class="container">
+    <h1 class="display-4">Lorem Ipsum</h1>
+    <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+    <hr class="my-4">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+  <!-- /.container   -->
+  </div>
+  </div>
+
+
+  <div class="col-md-6">
+    <br>
+    <h2>Lorem Ipsum</h2>
+  <div class="jumbotron bg-cover text-white" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(https://raw.githubusercontent.com/LearncodeWithRk/Simple-Layout-Html-Css/main/img10.png)">
+    <div class="container">
+    <h1 class="display-4">Lorem Ipsum</h1>
+    <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+    <hr class="my-4">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+  <!-- /.container   -->
+  </div>
+
+  </div>
+
+  </div>
+
+
+
+
+
+
+  <div class="container py-5">
+    <h1 class="text-center font-weight-light text-dark mb-5 pb-3 display-4">Service <span class="px-2 bg-warning">Best</span> Background</h1>
+    <div class="card-group">
+      <div class="col-sm-6 col-md-6 col-lg-3 py-3">
+        <div class="card h-100">
+          <div class="card-body text-center" data-filter="overlay-theme" style="background-image: url('https://raw.githubusercontent.com/LearncodeWithRk/Simple-Layout-Html-Css/main/img1.png');">
+            <div class="card-title">
+
+            </div>
+
+          </div>
+          <div class="card-footer">Lorem Ipsum</div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3 py-3">
+        <div class="card h-100">
+          <div class="card-body text-center" data-filter="overlay-secondary" style="background-image: url('https://raw.githubusercontent.com/LearncodeWithRk/Simple-Layout-Html-Css/main/img2.png');">
+            <div class="card-title">
+
+            </div>
+
+          </div>
+          <div class="card-footer">Lorem Ipsum</div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3 py-3">
+        <div class="card h-100">
+          <div class="card-body text-center" data-filter="overlay-primary" style="background-image: url('https://raw.githubusercontent.com/LearncodeWithRk/Simple-Layout-Html-Css/main/img3.png');">
+            <div class="card-title">
+
+            </div>
+
+          </div>
+          <div class="card-footer">Lorem Ipsum</div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3 py-3">
+        <div class="card h-100">
+          <div class="card-body text-center" data-filter="overlay-alert" style="background-image: url('https://raw.githubusercontent.com/LearncodeWithRk/Simple-Layout-Html-Css/main/img4.png');">
+            <div class="card-title">
+
+            </div>
+
+          </div>
+          <div class="card-footer">Lorem Ipsum</div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3 py-3">
+        <div class="card h-100">
+          <div class="card-body text-center" data-filter="overlay-dark" style="background-image: url('https://raw.githubusercontent.com/LearncodeWithRk/Simple-Layout-Html-Css/main/img9.png');">
+            <div class="card-title">
+
+            </div>
+
+          </div>
+          <div class="card-footer">Lorem Ipsum</div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3 py-3">
+        <div class="card h-100">
+          <div class="card-body text-center" data-filter="overlay-info" style="background-image: url('https://raw.githubusercontent.com/LearncodeWithRk/Simple-Layout-Html-Css/main/img6.png');">
+            <div class="card-title">
+
+            </div>
+
+          </div>
+          <div class="card-footer">Lorem Ipsum</div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3 py-3">
+        <div class="card h-100">
+          <div class="card-body text-center" data-filter="overlay-success" style="background-image: url('https://raw.githubusercontent.com/LearncodeWithRk/Simple-Layout-Html-Css/main/img8.png');">
+            <div class="card-title">
+
+            </div>
+
+          </div>
+          <div class="card-footer">Lorem Ipsum</div>
+
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3 py-3">
+        <div class="card h-100">
+          <div class="card-body text-center" data-filter="overlay-warning" style="background-image: url('https://raw.githubusercontent.com/LearncodeWithRk/Simple-Layout-Html-Css/main/img6.png');">
+            <div class="card-title">
+
+            </div>
+
+
+          </div>
+          <div class="card-footer">Lorem Ipsum</div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <footer class="bg-dark">
+  <section id="footer" class="py-4">
+
+      <h6 class="m-0 mt-4 text-center text-white text-capitalize">Copyright &copy; 2020 LearnCode With RK</h6>
+
+  </section>
+</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
